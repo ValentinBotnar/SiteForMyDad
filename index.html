@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ботнарь Алексей и Рыжов Александр - репетитор по математике и физике город Пинск">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="Математика и физика репетитор Пинск">
+    <meta property="og:site_name" content="Математика и Физика">
+    <meta property="article:author" content="Ботнарь Алексей и Рыжов Александр">
+    <title>Репетиторы по математике и физике</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/fontello.css" rel="stylesheet">
+    <link href="css/fontello-embedded.css" rel="stylesheet">
+  </head>
+  <body>
+    
+      <div class="main">
+          <div class="main-overlay"></div>
+            <div class="wrapper">
+                <div class="main-header">
+                    <h1>Математика и Физика</h1>
+                    <div class="main-line"></div>
+                    <p>Подготовка к ЦТ</p>
+                </div>
+            </div>  
+          <a class="main-down slowly" href="#portfolio">
+            <i class="icon-down"></i>
+          </a>
+      </div>
+      
+      <div class="portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="section-header">ВСЕЛЕННАЯ ФИЗМАТ - МЫ ПЕРВЫЕ И МЫ ЛУЧШИЕ!</h2>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="portfolio-block">
+                            <a href="stranizi/Matematika.html" target="_blank"><img src="img/new/1.jpg" alt="Работа №1"></a>
+                            <a href="stranizi/Matematika.html" target="_blank">МАТЕМАТИКА</a>                        
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="portfolio-block">
+                           <a href="stranizi/Fizika.html" target="_blank"><img src="img/new/2.jpg" alt="Работа №2"></a>
+                            <a href="stranizi/Fizika.html" target="_blank">ФИЗИКА</a>                        
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="portfolio-block">
+                           <a href="otzivi/1.html" target="_blank"><img src="img/new/3.jpg" alt="Работа №3"></a>
+                            <a href="otzivi/1.html" target="_blank">ОТЗЫВЫ</a>                        
+                        </div>
+                    </div>
+                </div>
+        </div>
+      </div>
+
+      <div class="footer">
+          <div class="container">
+            <div class="row">
+            <div class="col-lg-3">
+
+                <p>Ботнарь Алексей Владимирович<br>+375 (29) 621-31-47</p>
+                 <p>Рыжов Александр Владимирович<br>+375 (44) 590-86-15</p>
+            </div>  
+            <div class="col-lg-6">
+                <strong>Подпишитесь</strong>
+                <div class="social-links">
+                    <a href="https://vk.com/pinskmatemfiz">
+                        <i class="icon-vk"></i>
+                    </a>
+                   
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <strong>Напишите нам в ВК</strong>
+                <a class="offer-btn" href="https://vk.com/id412614286" target="_blank">Математика</a>
+                <a class="offer-btn" href="https://vk.com/id14050159" target="_blank">Физика</a>
+            </div>
+        </div>
+          </div>
+      </div>
+      
+   
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+      <script>
+    $(document).ready(function(){
+
+      $('.slowly').on("click",function(event){
+
+        event.preventDefault();
+
+        var id = $(this).attr('href'),
+
+        top = $(id).offset().top;
+
+        $("body,html").animate({scrollTop: top}, 800);
+      });
+      });
+    </script>
+      
+  </body>
+</html>

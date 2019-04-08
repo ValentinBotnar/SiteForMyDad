@@ -1,0 +1,32 @@
+.pagination{
+	display: inline-block;
+	text-align: center;
+}
+
+.pagination a{
+	float: left;
+	padding: 8px 16px;
+	text-decoration: none;
+	border:1px solid #ddd;
+	color: black;
+}
+
+.pagination a.active{
+	background-color: #4CAF50;
+	border: 1px solid #4CAF50;
+	color: white;
+}
+
+.pagination a:hover:not(.active){
+	background-color: #ddd;
+}
+
+.pagination a:first-child{
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.pagination a:last-child{
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}

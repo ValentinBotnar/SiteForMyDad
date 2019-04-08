@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/fontello-embedded.css" rel="stylesheet">
+  </head>
+  <body>
+    
+    <div class="mainBlock">
+      <div class="ownInfo">
+        <div class="photo">
+          <img class="personPhoto" src="../img/main/2.jpg">
+        </div>
+        <div class="ownName">
+            Рыжов Александр Владимирович<br>
+            Преподаватель физики<br>
+            +375 (44) 590-86-15
+        </div>
+      </div>
+      <div class="mainText">
+        <h2>Мое образование</h2>
+        <p>          
+          Закончил кафедру лазерной физики и спектроскопии физического факультета педагогического потока БГУ с красным дипломом<br><br>
+          После окончания работал в лицее БГУ, принимал участие в подготовке сборной Беларуси к международным олимпиадам по физике. Репетиторством занимаюсь с 2000 года.<br>
+          <h2>Достижения</h2>
+          С 2000 года в городе Пинск 100 баллов по физике набрало 11 человек, из которых 10 училось у меня.<br><br>
+          Также за же за эти годы имеем 8 победителей областной олимпиады по физике, 2 победителя республиканской и 1 международной олимпиады. 
+          <h2>Цель</h2>
+          Цель работы проста: любить то, что ты делаешь, не обделить вниманием и достучаться до каждого. И, наверное, самое главное - "заразить" ребят физикой.
+          <h2>Место проведения занятий: Пинск, улица Федотова, дом 3</h2>
+        </p>
+        <div class="map">
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aaab4f0271a2afed414baca3bc8d51a7ef85b6ab8d796d5dec42a234448cfe332&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+      </div>
+    </div>
+    
+        <div class="footer">
+          <div class="container">
+            <div class="row">
+            <div class="col-lg-3">
+
+                <p>Ботнарь Алексей Владимирович<br>+375 (29) 621-31-47</p>
+                 <p>Рыжов Александр Владимирович<br>+375 (44) 590-86-15</p>
+            </div>  
+            <div class="col-lg-6">
+                <strong>Подпишитесь</strong>
+                <div class="social-links">
+                    <a href="https://vk.com/pinskmatemfiz">
+                        <i class="icon-vk"></i>
+                    </a>
+                   
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <strong>Напишите нам в ВК</strong>
+                <a class="offer-btn" href="https://vk.com/id412614286" target="_blank">Математика</a>
+                <a class="offer-btn" href="https://vk.com/id14050159" target="_blank">Физика</a>
+            </div>
+        </div>
+          </div>
+      </div>
+      
+     
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+            $(function() {
+                var link = $('a[data-toggle="modal"]');
+                link.on('click', function(event) {
+                    var work = $(this).attr('data-work');
+                    var modal = $('.modal');
+                    modal.find('.modal-body').load(work+'.html');
+                });
+            });
+        </script>
+      
+      <script>
+    $(document).ready(function(){
+
+      $('.slowly').on("click",function(event){
+
+        event.preventDefault();
+
+        var id = $(this).attr('href'),
+
+        top = $(id).offset().top;
+
+        $("body,html").animate({scrollTop: top}, 800);
+      });
+      });
+    </script>
+      
+  </body>
+</html>
